@@ -8,7 +8,7 @@ def calculate_bmi(height_ft, height_in, weight):
   #   new height = (total height in inches) X 0.025 = ___ m
   # 3. Square the answer from step 2
   #   height squared = (___ m)^2 
-  # 4.Divide the answer from step 1 by the answer from step 3
+  # 4. Divide the answer from step 1 by the answer from step 3
   #  new weight / height squared = BMI
   
   total_height = (height_ft * 12) + height_in 
