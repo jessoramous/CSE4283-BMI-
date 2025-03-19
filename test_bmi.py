@@ -9,10 +9,12 @@ class TestBMI(unittest.TestCase):
     self.assertEqual(calculate_bmi(5, 6, 200), 33.1) # Test obese case
 
   def test_bmi_category(self):
-    self.assertEqual(bmi_category(16.5), "Underweight")
-    self.assertEqual(bmi_category(24.8), "Normal weight")
-    self.assertEqual(bmi_category(28.1), "Overweight")
-    self.assertEqual(bmi_category(33.1), "Obese")
+    self.assertEqual(bmi_category(18.4), "Underweight")
+    self.assertEqual(bmi_category(18.5), "Normal weight")
+    self.assertEqual(bmi_category(24.9), "Normal weight")    
+    self.assertEqual(bmi_category(25.0), "Overweight")
+    self.assertEqual(bmi_category(29.9), "Overweight")
+    self.assertEqual(bmi_category(30.0), "Obese")
 
 if __name__ == '__main__':
   unittest.main()
